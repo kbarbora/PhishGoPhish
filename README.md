@@ -1,17 +1,15 @@
-![FiercePhish](http://i.imgur.com/5WyejWU.png)
-
-# FiercePhish
+# PhishGoPhish
 
 
-FiercePhish is a full-fledged phishing framework to manage all phishing engagements.  It allows you to track separate phishing campaigns, schedule sending of emails, and much more. The features will continue to be expanded and will include website spoofing, click tracking, and extensive notification options.
+PhishGoPhish is a full-fledged phishing framework to manage all phishing engagements.  It allows you to track separate phishing campaigns, schedule sending of emails, and much more. The features will continue to be expanded and will include website spoofing, click tracking, and extensive notification options.
 
-**Note: As of 1/6/2017, FirePhish has been renamed FiercePhish. Screenshots may still show FirePhish logo**
+**Note: As of 1/6/2017, FirePhish has been renamed PhishGoPhish. Screenshots may still show FirePhish logo**
 
 # All Information is on the Wiki Pages
 
-[ChangeLog](https://github.com/Raikia/FiercePhish/wiki/Changelog)
+[ChangeLog](https://github.com/kbarbora/PhishGoPhish/wiki/Changelog)
 
-[Click here to go to the Wiki Pages](https://github.com/Raikia/FiercePhish/wiki)
+[Click here to go to the Wiki Pages](https://github.com/kbarbora/PhishGoPhish/wiki)
 
 # Disclaimer
 
@@ -21,13 +19,13 @@ This project is my own and is not a representation of my employer's views. It is
 
 ![Screenshot](http://i.imgur.com/v852BbM.png)
 
-More screenshots are available in the ["Features" wiki pages](https://github.com/Raikia/FiercePhish/wiki/Features-Overview)
+More screenshots are available in the ["Features" wiki pages](https://github.com/kbarbora/PhishGoPhish/wiki/Features-Overview)
 
 # Quick Automated Install
 
-For more information (like a manual installation method), see the [wiki pages](https://github.com/Raikia/FiercePhish/wiki)
+For more information (like a manual installation method), see the [wiki pages](https://github.com/kbarbora/PhishGoPhish/wiki)
 
-This is the preferred method of installing FiercePhish + SMTP + IMAP services.
+This is the preferred method of installing PhishGoPhish + SMTP + IMAP services.
 
 ### Supported Operating Systems
 * Ubuntu 16.04
@@ -37,9 +35,9 @@ This is the preferred method of installing FiercePhish + SMTP + IMAP services.
 
 (Fresh installs are expected, but the installer should work on a used OS with no problems)
 
-(Ubuntu 14.04 support has been removed. To install FiercePhish on 14.04, [read these instructions](https://github.com/Raikia/FiercePhish/wiki/Ubuntu-14.04-Installation-Guide))
+(Ubuntu 14.04 support has been removed. To install PhishGoPhish on 14.04, [read these instructions](https://github.com/kbarbora/PhishGoPhish/wiki/Ubuntu-14.04-Installation-Guide))
 
-_If you would like a different OS distribution supported, create a [Github issue](https://github.com/Raikia/FiercePhish/issues)_
+_If you would like a different OS distribution supported, create a [Github issue](https://github.com/kbarbora/PhishGoPhish/issues)_
 
 
 ### Recommended Prerequisites
@@ -57,19 +55,19 @@ This method is probably the easiest way to install/configure everything. It is a
 
  2. Generate the configuration file:
 
-   ```curl https://raw.githubusercontent.com/Raikia/FiercePhish/master/install.sh | bash```
+   ```curl https://raw.githubusercontent.com/kbarbora/PhishGoPhish/master/install.sh | bash```
 
  3. This will create a configuration file located at "~/fiercephish.config".  You must edit this file before moving on!
 
-   [Click here for a detailed description of the configuration variables](https://github.com/Raikia/FiercePhish/wiki/Installation-Configuration-File)
+   [Click here for a detailed description of the configuration variables](https://github.com/kbarbora/PhishGoPhish/wiki/Installation-Configuration-File)
 
  4. Once "CONFIGURED=true" is set in the configuration file, re-run the install script:
 
-   ```curl https://raw.githubusercontent.com/Raikia/FiercePhish/master/install.sh | bash```
+   ```curl https://raw.githubusercontent.com/kbarbora/PhishGoPhish/master/install.sh | bash```
 
  5. Sit and wait.  The installation could take anywhere from 5-15 minutes depending on your server's download speed.
 
- 6. Once the installation completes, follow the instructions it prints out.  It will tell you what [DNS entries](https://github.com/Raikia/FiercePhish/wiki/DNS-Configurations) to set.
+ 6. Once the installation completes, follow the instructions it prints out.  It will tell you what [DNS entries](https://github.com/kbarbora/PhishGoPhish/wiki/DNS-Configurations) to set.
 
 
 ### Installation Method #2 (local installation run)
@@ -82,7 +80,7 @@ This method is just as easy as method #1, but the install will prompt you as it 
  
  2. Download the configuration file:
 
-   ```wget https://raw.githubusercontent.com/Raikia/FiercePhish/master/install.sh```
+   ```wget https://raw.githubusercontent.com/kbarbora/PhishGoPhish/master/install.sh```
 
  3. Set the installer as executable:
 
@@ -92,21 +90,21 @@ This method is just as easy as method #1, but the install will prompt you as it 
 
    ``` ./install.sh ```
 
-   The installer will prompt you for the same information as is described in [the configuration file for method #1](https://github.com/Raikia/FiercePhish/wiki/Installation-Configuration-File).  See that wiki page for information on what to provide.
+   The installer will prompt you for the same information as is described in [the configuration file for method #1](https://github.com/kbarbora/PhishGoPhish/wiki/Installation-Configuration-File).  See that wiki page for information on what to provide.
 
  5. Sit and wait.  The installation could take anywhere from 5-15 minutes depending on your server's download speed.
 
- 6. Once the installation completes, follow the instructions it prints out.  It will tell you what [DNS entries](https://github.com/Raikia/FiercePhish/wiki/DNS-Configurations) to set.
+ 6. Once the installation completes, follow the instructions it prints out.  It will tell you what [DNS entries](https://github.com/kbarbora/PhishGoPhish/wiki/DNS-Configurations) to set.
 
 
 ### Updating
 
-As of FiercePhish v1.2.0, an update script is included.  Versions prior to 1.2.0 are **not** compatible with 1.2.0 and later, so you'll have to do a fresh install (or read the wiki).
+As of PhishGoPhish v1.2.0, an update script is included.  Versions prior to 1.2.0 are **not** compatible with 1.2.0 and later, so you'll have to do a fresh install (or read the wiki).
 
-To update FiercePhish, simply run:
+To update PhishGoPhish, simply run:
    ```
     sudo ./update.sh
    ```
 ### Troubleshooting
 
-If you have errors with the installation script, you can safely rerun the script without messing anything up (even if you provide it different information). If you continue to have problems, set "VERBOSE=true" (for method #1) or run ```./install.sh -v``` (for method #2) to see the full log of everything running.  If you still have problems, [submit a bug report](https://github.com/Raikia/FiercePhish/wiki/Reporting-Bugs).
+If you have errors with the installation script, you can safely rerun the script without messing anything up (even if you provide it different information). If you continue to have problems, set "VERBOSE=true" (for method #1) or run ```./install.sh -v``` (for method #2) to see the full log of everything running.  If you still have problems, [submit a bug report](https://github.com/kbarbora/PhishGoPhish/wiki/Reporting-Bugs).
