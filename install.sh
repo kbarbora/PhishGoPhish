@@ -35,10 +35,11 @@ DNS_INSTRUCTIONS=()
 
 read -d '' CONFIG_FILE_CONTENTS << EOF
 #################################
-### FiercePhish Configuration ###
-###      By Chris King        ###
-###        @raikiasec         ###
+###      PhishGoPhish Config  ###
+###          By Kev Bar       ###
+###           @kbarbora       ###
 #################################
+(forked from FiercePhish)
 
 
 ## Set this to true once you are done configuring everything
